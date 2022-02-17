@@ -1,0 +1,100 @@
+/*************** common ***************/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#video-grid {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px; */
+    display: none;
+}
+
+/* video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+/*************** admin section ***************/
+
+#usersQueue {
+    float: left;
+    width: 250px;
+    height: 90vh;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: 1px solid rgb(41, 41, 41);
+    overflow: auto;
+}
+
+.user {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+    border-bottom: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.connectBtn, .connectedBtn {
+    width: auto;
+    height: 35px;
+    padding: 3.7% 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(14, 101, 200);
+    cursor: pointer;
+    text-align: center;
+}
+.connectBtn:hover {
+    background-color: rgb(9, 67, 133);
+}
+
+.connectedBtn {
+    background-color: rgb(18, 233, 18);
+}
+.connectedBtn:hover {
+    background-color: red;
+}
+
+
+/*************** client section ***************/
+
+#requestCallBtn {
+    width: 200px;
+    height: 200px;
+    margin: 150px auto;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#requestCallBtn p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.clientNotConnected {
+    background-color: rgb(14, 101, 200);
+}
+.clientNotConnected:hover {
+    background-color: rgb(9, 67, 133);
+}
+
+.clientConnected {
+    background-color: rgb(18, 233, 18);
+}
+.clientConnected:hover {
+    background-color: red;
+}
